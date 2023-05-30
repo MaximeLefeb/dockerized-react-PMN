@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3.9"
 
 services:
   app:
@@ -11,3 +11,5 @@ services:
       - ./src:/app/src
     ports:
       - 3000:3000
+    environment:
+      - CHOKIDAR_USEPOLLING=true
